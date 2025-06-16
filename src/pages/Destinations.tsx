@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card } from '@/components/ui/card'
 import Image from 'next/image'
 
 const countries = [
@@ -31,21 +31,21 @@ const countryUniversities = [
     id: 1,
     country: 'UK',
     list: [
-  { name: 'Aberdeen', logo: './aberdeen.svg', desc: 'International Study Centre' },
-  { name: 'Cardiff', logo: './cardiff.svg' },
-  { name: 'Durham', logo: './durham.svg', desc: 'International Study Centre' },
-  { name: 'Huddersfield', logo: './huddersfield.svg', desc: 'International Study Centre' },
-  { name: 'Kingston', logo: './kingston.svg', desc: 'International Study Centre' },
-  { name: 'Leeds', logo: './leeds.svg', desc: 'International Study Centre' },
-  { name: 'Leeds Beckett', logo: './leeds-beckett.svg', desc: 'International Study Centre' },
-  { name: 'LJMU', logo: './ljmu.svg', desc: 'International Study Centre' },
-  { name: 'Cardiff - Russel Group', logo: './cardiff-russell.svg', desc: 'International Study Centre' },
-  { name: 'RHUL', logo: './rhul.svg', desc: 'International Study Centre' },
-  { name: 'Sheffield', logo: './sheffield.svg', desc: 'International Study Centre' },
-  { name: 'Strathclyde', logo: './strathclyde.svg', desc: 'International Study Centre' },
-  { name: 'Surrey', logo: './surrey.svg', desc: 'International Study Centre' },
-  { name: 'Sussex', logo: './sussex.svg', desc: 'International Study Centre' },
-  { name: 'Teesside', logo: './teesside.svg', desc: 'International Study Centre' }
+  { name: 'Aberdeen', logo: './images/uk/1.jpeg', desc: 'International Study Centre' },
+  { name: 'Cardiff', logo: './images/uk/2.jpeg', desc: 'Cardiff Metropolitan University' },
+  { name: 'Durham', logo: './images/uk/3.jpeg', desc: 'International Study Centre' },
+  { name: 'Huddersfield', logo: './images/uk/4.jpeg', desc: 'International Study Centre' },
+  { name: 'Kingston', logo: './images/uk/5.jpeg', desc: 'International Study Centre' },
+  { name: 'Leeds', logo: './images/uk/6.jpeg', desc: 'International Study Centre' },
+  { name: 'Leeds Beckett', logo: './images/uk/7.jpeg', desc: 'International Study Centre' },
+  { name: 'LJMU', logo: './images/uk/8.jpeg', desc: 'International Study Centre' },
+  { name: 'Cardiff - Russel Group', logo: './images/uk/9.jpeg', desc: 'International Study Centre' },
+  { name: 'RHUL', logo: './images/uk/10.jpeg', desc: 'International Study Centre' },
+  { name: 'Sheffield', logo: './images/uk/11.jpeg', desc: 'International Study Centre' },
+  { name: 'Strathclyde', logo: './images/uk/12.jpeg', desc: 'International Study Centre' },
+  { name: 'Surrey', logo: './images/uk/13.jpeg', desc: 'International Study Centre' },
+  { name: 'Sussex', logo: './images/uk/14.jpeg', desc: 'International Study Centre' },
+  { name: 'Teesside', logo: './images/uk/15.jpeg', desc: 'International Study Centre' }
 
      ],
   },
@@ -53,76 +53,76 @@ const countryUniversities = [
     id: 2,
     country: 'USA',
     list: [
-    { name: 'Western Kentucky University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'New York Institute of Technology', logo: './next.svg' },
-  { name: 'Hult International Business School', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Florida International University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Weber State University', logo: './next.svg', desc: 'International Study Center' },
+    { name: 'Western Kentucky University', logo: './images/usa/1.jpeg', desc: 'International Study Center' },
+  { name: 'New York Institute of Technology', logo: './images/usa/2.jpeg' },
+  { name: 'Hult International Business School', logo: './images/usa/3.jpeg', desc: 'International Study Center' },
+  { name: 'Florida International University', logo: './images/usa/4.jpeg', desc: 'International Study Center' },
+  { name: 'Weber State University', logo: './images/usa/5.jpeg', desc: 'International Study Center' },
 
   { heading: 'INTO USA' },
 
-  { name: 'Drew', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Saint Louis University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'The University of Arizona', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Oregon State University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'George Mason University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Hofstra University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Colorado State University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'University of South Florida', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'University of Alabama at Birmingham', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Illinois State University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Suffolk University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Washington State University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Glasgow Caledonian University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Fisher College', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'New England College', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Quinnipiac University', logo: './next.svg', desc: 'International Study Center' },
+  { name: 'Drew', logo: './images/usa/6.jpeg', desc: 'International Study Center' },
+  { name: 'Saint Louis University', logo: './images/usa/7.jpeg', desc: 'International Study Center' },
+  { name: 'The University of Arizona', logo: './images/usa/8.jpeg', desc: 'International Study Center' },
+  { name: 'Oregon State University', logo: './images/usa/9.jpeg', desc: 'International Study Center' },
+  { name: 'George Mason University', logo: './images/usa/10.jpeg', desc: 'International Study Center' },
+  { name: 'Hofstra University', logo: './images/usa/11.jpeg', desc: 'International Study Center' },
+  { name: 'Colorado State University', logo: './images/usa/12.jpeg', desc: 'International Study Center' },
+  { name: 'University of South Florida', logo: './images/usa/13.jpeg', desc: 'International Study Center' },
+  { name: 'University of Alabama at Birmingham', logo: './images/usa/14.jpeg', desc: 'International Study Center' },
+  { name: 'Illinois State University', logo: './images/usa/15.jpeg', desc: 'International Study Center' },
+  { name: 'Suffolk University', logo: './images/usa/17.jpeg', desc: 'International Study Center' },
+  { name: 'Washington State University', logo: './images/usa/18.jpeg', desc: 'International Study Center' },
+  { name: 'Glasgow Caledonian University', logo: './images/usa/19.jpeg', desc: 'International Study Center' },
+  { name: 'Fisher College', logo: './images/usa/20.jpeg', desc: 'International Study Center' },
+  { name: 'New England College', logo: './images/usa/21.jpeg', desc: 'International Study Center' },
+  { name: 'Quinnipiac University', logo: './images/usa/22.jpeg', desc: 'International Study Center' },
 
   { heading: 'NAVITAS USA' },
 
-  { name: 'Richard Bland College of William & Mary', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'University of Massachusetts Boston', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Queens College', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'SAE Institute', logo: './next.svg', desc: 'International Study Center' },
+  { name: 'Richard Bland College of William & Mary', logo: './images/usa/23.jpeg', desc: 'International Study Center' },
+  { name: 'University of Massachusetts Boston', logo: './images/usa/24.jpeg', desc: 'International Study Center' },
+  { name: 'Queens College', logo: './images/usa/25.jpeg', desc: 'International Study Center' },
+  { name: 'SAE Institute', logo: './images/usa/26.jpeg', desc: 'International Study Center' },
 
   { heading: 'SHORELIGHT USA' },
 
-  { name: 'Adelphi University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'American University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Auburn University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'University of Illinois at Chicago', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Florida International University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Louisiana State University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'University of Central Florida', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'University of Dayton', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'University of Kansas', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'University of the Pacific', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'University of South Carolina', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'The University of Utah', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Gonzaga University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'American Collegiate', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'New York University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'University of Mississippi', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Cleveland State University', logo: './next.svg', desc: 'International Study Center' },
+  { name: 'Adelphi University', logo: './images/usa/27.jpeg', desc: 'International Study Center' },
+  { name: 'American University', logo: './images/usa/28.jpeg', desc: 'International Study Center' },
+  { name: 'Auburn University', logo: './images/usa/29.jpeg', desc: 'International Study Center' },
+  { name: 'University of Illinois at Chicago', logo: './images/usa/30.jpeg', desc: 'International Study Center' },
+  { name: 'Florida International University', logo: './images/usa/31.jpeg', desc: 'International Study Center' },
+  { name: 'Louisiana State University', logo: './images/usa/32.jpeg', desc: 'International Study Center' },
+  { name: 'University of Central Florida', logo: './images/usa/33.jpeg', desc: 'International Study Center' },
+  { name: 'University of Dayton', logo: './images/usa/34.jpeg', desc: 'International Study Center' },
+  { name: 'University of Kansas', logo: './images/usa/35.jpeg', desc: 'International Study Center' },
+  { name: 'University of the Pacific', logo: './images/usa/36.jpeg', desc: 'International Study Center' },
+  { name: 'University of South Carolina', logo: './images/usa/37.jpeg', desc: 'International Study Center' },
+  { name: 'The University of Utah', logo: './images/usa/38.jpeg', desc: 'International Study Center' },
+  { name: 'Gonzaga University', logo: './images/usa/39.jpeg', desc: 'International Study Center' },
+  { name: 'American Collegiate', logo: './images/usa/40.jpeg', desc: 'International Study Center' },
+  { name: 'New York University', logo: './images/usa/41.jpeg', desc: 'International Study Center' },
+  { name: 'University of Mississippi', logo: './images/usa/42.jpeg', desc: 'International Study Center' },
+  { name: 'Cleveland State University', logo: './images/usa/43.jpeg', desc: 'International Study Center' },
 
   { heading: 'SG USA' },
 
-  { name: 'James Madison University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'LIU Post', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Long Island University Brooklyn', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Western Washington University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'DePaul University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Texas A&M University-Corpus Christi', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Baylor University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'Lipscomb University', logo: './next.svg', desc: 'International Study Center' },
-  { name: 'University of Hartford', logo: './next.svg', desc: 'International Study Center' }
+  { name: 'James Madison University', logo: './images/usa/44.jpeg', desc: 'International Study Center' },
+  { name: 'LIU Post', logo: './images/usa/45.jpeg', desc: 'International Study Center' },
+  { name: 'Long Island University Brooklyn', logo: './images/usa/46.jpeg', desc: 'International Study Center' },
+  { name: 'Western Washington University', logo: './images/usa/47.jpeg', desc: 'International Study Center' },
+  { name: 'DePaul University', logo: './images/usa/48.jpeg', desc: 'International Study Center' },
+  { name: 'Texas A&M University-Corpus Christi', logo: './images/usa/47.jpeg', desc: 'International Study Center' },
+  { name: 'Baylor University', logo: './images/usa/48.jpeg', desc: 'International Study Center' },
+  { name: 'Lipscomb University', logo: './images/usa/49.jpeg', desc: 'International Study Center' },
+  { name: 'University of Hartford', logo: './images/usa/50.jpeg', desc: 'International Study Center' }
  
     ],
   },
   {
     id: 3,
     country: 'Ireland',
-    list: [{ name: 'University College Dublin', logo: './next.svg', desc: 'International Study Center' }],
+    list: [{ name: 'University College Dublin', logo: './images/ireland/1.jpeg', desc: 'International Study Center' }],
   },
 ]
 
@@ -193,20 +193,19 @@ const Destinations = () => {
     {selectedCountry && (
   <div className='bg-white p-6 shadow-2xl'>
     <h3 className="text-2xl font-semibold mb-6 text-center">{selectedCountry} Universities</h3>
-    <div className='grid grid-cols-3 gap-3 text-center justify-center'>
+    <div className='grid lg:grid-cols-5 md:grid-col-3 sm:grid-col-2 gap-3 text-center  justify-center'>
       {filteredList.map((uni, index) => (
         uni.heading ? (
-          <div key={index} className="col-span-3 my-4">
-            <h4 className="text-xl font-bold text-left text-indigo-800 border-b pb-1">{uni.heading}</h4>
+          <div key={index} className="col-span-5 py-8">
+            <h4 className="text-2xl font-bold text-left text-indigo-800 border-b pb-1">{uni.heading}</h4>
           </div>
         ) : (
           <Card key={index} className="flex flex-wrap justify-center p-2 items-center bg-gray-100 gap-4 hover:shadow-xl transition duration-200">
-            <Image
+            <img
               src={uni.logo}
               alt={uni.name}
-              width={250}
-              height={300}
-              className="w-12 h-12 object-contain"
+              
+              className="w-full h-1/2 object-contain"
             />
             <div>
               {/* <h4 className="font-semibold">{uni.name}</h4> */}

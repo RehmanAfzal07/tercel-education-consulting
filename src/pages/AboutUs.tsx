@@ -1,18 +1,12 @@
 'use client'
 import React,{useEffect} from 'react'
 import 'aos/dist/aos.css';
-import AOS from 'aos';
 import { Card } from '@/components/ui/card';
-import Image from 'next/image';
+
 
 
 const AboutUs = () => {
-  useEffect(() => {
-      AOS.init({
-        duration: 1000, 
-        once: false, 
-      });
-    }, []);
+
   return (
     <div className='mt-10 bg-gray-100 p-4'>
  
