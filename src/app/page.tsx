@@ -45,8 +45,7 @@ function App() {
       {/* Main content */}
       <main className="flex-1 overflow-y-auto p-4 md:p-8 bg-white mt-5">
         {renderPage()}
-        <Services/>
-        <AboutUs/>
+       
       </main>
     </div>
   );
