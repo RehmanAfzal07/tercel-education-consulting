@@ -1,5 +1,5 @@
 'use client'
-import React,{useEffect} from 'react'
+import React from 'react'
 import 'aos/dist/aos.css';
 import { Card } from '@/components/ui/card';
 
@@ -65,7 +65,7 @@ const AboutUs = () => {
         <p>
           Driven by a clear vision to revolutionize the educational consulting landscape, Mahmood founded Tiercel Consulting.
           He masterfully combines his deep-seated industry expertise and an extensive network of relationships with top-tier
-          institutions worldwide with genuine, personalized care for each student's journey, ensuring Tiercel clients receive
+          institutions worldwide with genuine, personalized care for each studen journey, ensuring Tiercel clients receive
           unparalleled opportunities and insightful guidance.
         </p>
         <p className='mt-2'>
