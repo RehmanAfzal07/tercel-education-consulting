@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import React, { useState } from 'react';
+import InquiryForm from './Form/InquiryForm';
 
 interface SidebarProps {
   activePage: string;
@@ -25,6 +26,7 @@ const Sidebar = ({
   setSidebarOpen,
 }: SidebarProps) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showForm, setShowform]=React.useState(false);
 
   const handleClick = (item: string) => {
     setActivePage(item);
@@ -68,9 +70,12 @@ const Sidebar = ({
           </div>
 
           <div className="hidden md:block">
-            <button className="bg-gray-800 px-4 py-3 text-white rounded-lg font-bold">
+                <button onClick={()=>setShowform(true)}
+            className="w-full bg-gray-700 px-4 py-2 text-white rounded-lg font-bold">
               Virtual Consultation
             </button>
+            {showForm && <InquiryForm closeForm={()=>setShowform(false)}/>}
+          
           </div>
         </div>
 
@@ -92,9 +97,11 @@ const Sidebar = ({
                 </li>
               ))}
             </ul>
-            <button className="w-full bg-red-500 px-4 py-2 text-white rounded-lg font-bold">
+            <button onClick={()=>setShowform(true)}
+            className="w-full bg-red-500 px-4 py-2 text-white rounded-lg font-bold">
               Virtual Consultation
             </button>
+            {showForm && <InquiryForm closeForm={()=>setShowform(false)}/>}
           </div>
         )}
       </div>

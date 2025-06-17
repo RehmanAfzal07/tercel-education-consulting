@@ -1,12 +1,17 @@
 "use client";
 
 
-import React,{useEffect} from "react";
+import React,{useEffect,useState} from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from "next/image";
 
 const Home: React.FC = () => {
+  const [isCallOptionsVisible, setCallOptionsVisible] = useState(false);
+
+  const toggleCallOptions = () => setCallOptionsVisible(!isCallOptionsVisible);
+
+
 useEffect(() => {
     AOS.init({
       duration: 1000, // animation duration in ms
@@ -145,6 +150,44 @@ useEffect(() => {
         </circle>
       </svg>
        
+       <div className="fixed bottom-6 right-6 flex flex-col items-end space-y-3 z-50">
+      
+      {/* Call Options (conditionally rendered) */}
+      {isCallOptionsVisible && (
+        <div className="mb-2 flex flex-col items-end space-y-2 animate-fade-in">
+          <a
+            href="https://wa.me/1234567890"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full shadow-md text-sm transition"
+          >
+            Chat on WhatsApp
+          </a>
+          <button
+            onClick={() => alert('Booking appointment...')}
+            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full shadow-md text-sm transition"
+          >
+            Book an Appointment
+          </button>
+        </div>
+      )}
+
+      {/* Call Button */}
+      <button
+        onClick={toggleCallOptions}
+        className="bg-red-500 hover:bg-red-600 text-white px-5 py-3 rounded-full shadow-lg font-medium transition"
+      >
+        📞 Call
+      </button>
+
+      {/* AI Assistant Button */}
+      <button
+        onClick={() => alert('Launching AI Assistant...')}
+        className="bg-gray-800 hover:bg-gray-700 text-white px-5 py-3 rounded-full shadow-lg font-medium transition"
+      >
+        🤖 AI Assistant
+      </button>
+    </div>
     </div>
   );
 };
